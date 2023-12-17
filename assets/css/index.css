@@ -43,7 +43,7 @@ button{
     top: 0;
     padding: 10px;
     border-radius: 0 0 137px 137px / 0 0 137px 137px;
-    z-index:50;
+    z-index:999;
 }
 
 .header .nav{

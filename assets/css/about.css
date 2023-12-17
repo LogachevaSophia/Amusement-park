@@ -1,0 +1,81 @@
+
+#about{
+    position: relative;
+    background-color: rgb(112,193,241);
+    margin: 0 auto;
+    color: white;
+    height: calc(100vh + 70px);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+#about .content .text{
+    width: 90%;
+    left:35%;
+    overflow: hidden;
+    position: absolute;
+    left:5%;
+    top:10%;
+}
+
+#about .candyFon{
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    width: 48vh;
+    height: 84vh;
+    display: none;
+}
+
+#about .slider{
+    margin-top: 20px;
+    display: flex;
+    gap:15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#about .slider .card{
+    /* border:2px solid black; */
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+}
+#about .slider .card img{
+    width:100px;
+    height: 100px;
+    position: relative;
+    z-index: 5;
+    left:8x;
+}
+#about .slider .card::after{
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    background-color: white;
+    content: ' ';
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+
+
+@media (min-width:800px){
+    #about .candyFon{
+        display: unset;
+    }
+    #about .content .text{
+    left:35%;
+    width: 60%;
+    top:35%;
+    }
+}
+@media (max-width:659px){
+    #about .slider{
+        
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+}
