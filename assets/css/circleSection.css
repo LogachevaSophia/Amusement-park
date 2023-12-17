@@ -16,10 +16,3 @@
     left:10%;
     width:60%
 }
-#circle .content button{
-    border-radius: 15px;
-    background-color: white;
-    color:rgb(186 183 193);
-    padding:10px;
-    border: none;
-}

@@ -1,0 +1,98 @@
+#toDo{
+    color: rgb(123 118 155);
+    padding: 50px 0;
+}
+
+#toDo .content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#toDo .content .title{
+    font-weight: bold;
+}
+#toDo .content .slider {
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+    overflow-y: auto;
+    min-height: 80vh;
+    position: relative;
+}
+
+#toDo .content .slider .card{
+    margin-top: 20px;
+    width: 215px;
+    min-width: 215px;
+    max-width: 215px;
+    height: 350px;
+    min-height: 350px;
+    max-height:  350px;
+    background-color: aqua;
+    border-radius: 50px 50px 0 0 ;
+    position: relative;
+    overflow: hidden;
+}
+
+#toDo .content .slider .card::after{
+    position: absolute;
+    top: 46%;
+    left: 15%;
+    background-color: white;
+    content: ' ';
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+#toDo .content .slider .card .title{
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+#toDo .content .slider .pink{
+    background-color: rgb(255 135 186);
+}
+#toDo .content .slider .blue{
+    background-color: rgb(135, 145, 255);
+}
+#toDo .content .slider .persik{
+    background-color: rgb(248 185 128);
+}
+#toDo .content .slider button{
+    position: absolute;
+    top: 30%;
+    left:28%;
+}
+#toDo .content .slider .card:first-child img{
+    width: 230px;
+    height: 197px;
+    overflow: hidden;
+    position: absolute;
+    top: 51%;
+    z-index: 90;
+    rotate: -17grad;
+    left: 9%;
+}
+#toDo .content .slider .card:nth-child(2) img{
+    width: 245px;
+    height: 178px;
+    overflow: hidden;
+    position: absolute;
+    top: 51%;
+    z-index: 90;
+    left: 9%;
+}
+#toDo .content .slider .card:nth-child(3) img{
+    width: 284px;
+    height: 186px;
+    overflow: hidden;
+    position: absolute;
+    top: 48%;
+    z-index: 90;
+    left: 6%;
+}
