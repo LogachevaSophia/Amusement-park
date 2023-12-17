@@ -1,10 +1,10 @@
 body{
     margin:0 0;
     padding: 0;
-    font-size: calc(.5em + .5vw);
+    font-size: calc(.5em + .8vw);
     font-family: 'Montserrat', sans-serif;
     color: black;
-    font-weight: 200;
+    font-weight: 400;
     min-width: 320px;
 }
 
@@ -32,18 +32,19 @@ button{
     border-radius: 15px;
     background-color: white;
     color:rgb(186 183 193);
-    padding:10px;
+    padding:10px 20px;
     border: none;
 }
 
 .header{
     background-color: white;
-    height:50px;
+    /* height:50px; */
     position: sticky;
     top: 0;
     padding: 10px;
     border-radius: 0 0 137px 137px / 0 0 137px 137px;
     z-index:999;
+    box-shadow: 0px 2px 2px #bfb6b6;
 }
 
 .header .nav{
@@ -55,6 +56,7 @@ button{
 .header .nav .logo{
     display: flex;
     vertical-align: middle;
+    gap:12px;
 }
 .header .nav .logo img{
     width: 40px;
@@ -65,7 +67,9 @@ button{
     display: flex;
     flex-direction: row;
     vertical-align: middle;
-    gap:15px;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
 }
 
 .header .nav .menu a:hover{
@@ -89,16 +93,24 @@ button{
 }
 
 #hamburger-menu #sidebar-menu {
-    visibilty: hidden;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 200px;
-    height: 100%;
+    /* visibility: hidden;
+    position: absolute;
+    top: -250px;
     background-color: #ffffff;
     padding: 0px 10px;
     box-sizing: border-box;
     transition: 0.3s;
+    width: 100vw;
+    left: 0px; */
+    /* display: none; */
+    visibility: hidden;
+    background-color: #ffffff;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    top: -200px;
+    transition: 0.3s;
+    z-index: -3;
 
 }
 #hamburger-input{
@@ -107,7 +119,12 @@ button{
 }
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
     visibility: visible;
-    left: 0;
+    top: 50px;
+    box-shadow: 0px 2px 2px #bfb6b6;
+    border-radius: 0 0 137px 137px / 0 0 32px 32px;
+}
+#hamburger-input:checked ~ body > .header{
+    border-radius:0;
 }
 #hamburger-input:checked ~ .overlay{
    visibility: visible;
@@ -126,6 +143,9 @@ button{
     }
     .header .nav {
         justify-content: center;
+    }
+    .header{
+        border-radius: 0;
     }
 
 }

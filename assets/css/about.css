@@ -6,7 +6,8 @@
     color: white;
     height: calc(100vh + 70px);
     overflow: hidden;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
+    /* font-weight: 300; */
 }
 #about .content .text{
     width: 90%;
@@ -42,8 +43,8 @@
     position: relative;
 }
 #about .slider .card img{
-    width:100px;
-    height: 100px;
+    width:150px;
+    height: 150px;
     position: relative;
     z-index: 5;
     left:8x;
@@ -55,8 +56,8 @@
     background-color: white;
     content: ' ';
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     z-index: 1;
 }
 
