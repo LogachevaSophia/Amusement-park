@@ -98,4 +98,10 @@
     top: 48%;
     z-index: 90;
     left: 6%;
+}@media (max-width:859px){
+    #toDo .content .slider {
+        
+        justify-content: space-between;
+        /* flex-direction: column; */
+    }
 }
