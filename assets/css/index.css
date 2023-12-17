@@ -92,7 +92,7 @@ button{
     visibilty: hidden;
     position: fixed;
     top: 0;
-    right: -250px;
+    left: -250px;
     width: 200px;
     height: 100%;
     background-color: #ffffff;
@@ -107,7 +107,7 @@ button{
 }
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
     visibility: visible;
-    right: 0;
+    left: 0;
 }
 #hamburger-input:checked ~ .overlay{
    visibility: visible;
