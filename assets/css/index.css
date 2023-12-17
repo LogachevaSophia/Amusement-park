@@ -103,7 +103,9 @@ ul li{
     background: url("../img/koleso.jpg") no-repeat center center;
     height:100vh;
     margin-top:-60px;
-    /* width:100vw; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (min-width: 0px) and (max-width:800px){
