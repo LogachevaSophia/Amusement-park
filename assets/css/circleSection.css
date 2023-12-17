@@ -1,0 +1,25 @@
+#circle{
+    background: url("../img/koleso.jpg") no-repeat center center;
+    height:calc(100vh - 70px);
+    margin-top:-60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    color: white;
+    position: relative;
+}
+
+#circle .content{
+    position: absolute;
+    top:30%;
+    left:10%;
+    width:60%
+}
+#circle .content button{
+    border-radius: 15px;
+    background-color: white;
+    color:rgb(186 183 193);
+    padding:10px;
+    border: none;
+}

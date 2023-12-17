@@ -11,6 +11,15 @@ body{
 .smallFont{
     font-size: calc(.1em + .8vw);
 }
+
+.bigfont{
+    font-size: calc(4em + 3vw);
+}
+
+.middlefont{
+    font-size: calc(2em + 1vw);
+}
+
 a{
     text-decoration: none;
     color: black
@@ -27,6 +36,7 @@ ul li{
     top: 0;
     padding: 10px;
     border-radius: 0 0 137px 137px / 0 0 137px 137px;
+    z-index:50;
 }
 
 .header .nav{
@@ -63,11 +73,11 @@ ul li{
     margin: 20px;
     background: linear-gradient(
       to bottom, 
-      #3D0E61, #3D0E61 20%, 
+      #666666, #666666 20%, 
       white 20%, white 40%, 
-      #3D0E61 40%, #3D0E61 60%, 
+      #666666 40%, #666666 60%, 
       white 60%, white 80%, 
-      #3D0E61 80%, #3D0E61 100%
+      #666666 80%, #666666 100%
     );
 }
 
@@ -97,17 +107,12 @@ ul li{
   opacity: 0.4;
 }
 
+@media (min-width:800px){
+    #hamburger-menu,hamburger-input{
+        display: none;
 
-
-#circle{
-    background: url("../img/koleso.jpg") no-repeat center center;
-    height:100vh;
-    margin-top:-60px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    }
 }
-
 @media (min-width: 0px) and (max-width:800px){
     .header .nav > .menu,.header .nav > .address, .header .nav > .shedule {
         display: none;
