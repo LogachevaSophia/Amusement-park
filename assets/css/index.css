@@ -32,8 +32,9 @@ button{
     border-radius: 15px;
     background-color: white;
     color:rgb(186 183 193);
-    padding:10px 20px;
+    padding:10px 40px;
     border: none;
+    font-size: calc(.5em + .8vw);
 }
 
 .header{
@@ -52,11 +53,16 @@ button{
     justify-content: space-between;
     padding:0 50px;
     vertical-align: middle;
+    font-size: calc(.5em + .5vw);
+    text-wrap: nowrap;
+    gap:5px;
+    
 }
 .header .nav .logo{
     display: flex;
     vertical-align: middle;
     gap:12px;
+    line-height: 20px;
 }
 .header .nav .logo img{
     width: 40px;
@@ -69,7 +75,8 @@ button{
     vertical-align: middle;
     gap: 15px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
+    line-height: 40px;
 }
 
 .header .nav .menu a:hover{
@@ -129,6 +136,9 @@ button{
 #hamburger-input:checked ~ .overlay{
    visibility: visible;
   opacity: 0.4;
+}
+.header .nav .address{
+    text-wrap:wrap;
 }
 
 @media (min-width:800px){
