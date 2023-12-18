@@ -1,7 +1,7 @@
 #toDo{
     color: rgb(123 118 155);
     padding: 50px 0 0 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #toDo .content{
@@ -35,17 +35,23 @@
     border-radius: 50px;
     position: relative;
     overflow: hidden;
+    transition: 0.3s;
+}
+#toDo .content .slider .card:hover{
+   transform: scale(1.05);
+   /* bottom: 20px; */
+   
 }
 
 #toDo .content .slider .card::after{
     position: absolute;
-    top: 46%;
-    left: 15%;
+    bottom: -8%;
+    right: -6%;
     background-color: white;
     content: ' ';
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 80%;
+    height: 60%;
 }
 
 #toDo .content .slider .card .title{
@@ -72,32 +78,32 @@
     padding: 10px 30px;
 }
 #toDo .content .slider .card:first-child img{
-    width: 230px;
-    height: 197px;
+    width: 84%;
+    height: 44%;
     overflow: hidden;
     position: absolute;
-    top: 51%;
+    bottom: 0%;
     z-index: 90;
     rotate: -17grad;
-    left: 9%;
+    right: 0%;
 }
 #toDo .content .slider .card:nth-child(2) img{
     width: 245px;
     height: 178px;
     overflow: hidden;
     position: absolute;
-    top: 51%;
+    bottom: 0%;
     z-index: 90;
-    left: 9%;
+    right: 0%;
 }
 #toDo .content .slider .card:nth-child(3) img{
     width: 284px;
     height: 186px;
     overflow: hidden;
     position: absolute;
-    top: 48%;
+    bottom: 0%;
     z-index: 90;
-    left: 6%;
+    right: 6%;
 }
 @media (max-width:859px){
     #toDo .content .slider {

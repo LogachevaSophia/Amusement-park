@@ -22,7 +22,8 @@ body{
 
 a{
     text-decoration: none;
-    color: black
+    /* color: black */
+    cursor: pointer;
 }
 ul li{
     list-style: none;
@@ -35,17 +36,22 @@ button{
     padding:10px 40px;
     border: none;
     font-size: calc(.5em + .8vw);
+    cursor: pointer;
 }
 
 .header{
     background-color: white;
     /* height:50px; */
+    /* color: black; */
     position: sticky;
     top: 0;
     padding: 10px;
     border-radius: 0 0 137px 137px / 0 0 137px 137px;
     z-index:999;
     box-shadow: 0px 2px 2px #bfb6b6;
+}
+.header a{
+    color: black;
 }
 
 .header .nav{
