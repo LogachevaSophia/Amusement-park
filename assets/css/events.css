@@ -43,6 +43,7 @@
 #events .slider .card .schdule{
     display: flex;
     justify-content: space-between;
+    font-size: 10px;
 }
 
 #events .slider .card .nameEvent,#events .slider .card .schdule{

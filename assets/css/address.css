@@ -1,0 +1,18 @@
+#address{
+    background: linear-gradient(185deg, #96b2cd,#9fc3dc);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             ;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:10px;
+    vertical-align: middle;
+    padding:50px;
+    background-image: url(../img/boubles.png),linear-gradient(185deg, #96b2cd,#9fc3dc);
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+    flex-wrap: wrap;
+    
+}
+#address iframe{
+    border-radius: 50px;
+}

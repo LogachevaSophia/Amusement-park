@@ -10,6 +10,7 @@
     <link href="assets/css/toDo.css" rel="stylesheet">
     <link href="assets/css/about.css" rel="stylesheet">
     <link href="assets/css/events.css" rel="stylesheet">
+    <link href="assets/css/address.css" rel="stylesheet">
 
 
 
@@ -21,17 +22,21 @@
 <body>
     <div class="header">
         <div class="nav">
-            <div class="logo">
-                <img src="./assets/img/logo.png" />
+            <a href="#">
+                <div class="logo">
 
-                <span>Парк имени <br><b>Юрия Гагарина</b></span>
-            </div>
+                    <img src="./assets/img/logo.png" />
+
+                    <span>Парк имени <br><b>Юрия Гагарина</b></span>
+
+                </div>
+            </a>
             <div class="menu">
                 <a href="#toDo">Чем заняться</a>
                 <a href="#about">О парке</a>
                 <a href="#events">События</a>
-                <a href="#">Галерея</a>
-                <a href="#">Контакты</a>
+                <!-- <a href="#">Галерея</a> -->
+                <a href="#address">Контакты</a>
             </div>
             <div class="address smallFont"><span><b>г. Самара</b><br> ул. Советской Армии, 18</span></div>
             <div class="shedule smallFont">
@@ -51,11 +56,11 @@
                     </ul> -->
 
                     <ul>
-                        <li><a href="#">Чем заняться</a></li>
-                        <li><a href="#">О парке</a></li>
-                        <li><a href="#">События</a></li>
-                        <li><a href="#">Галерея</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#toDo">Чем заняться</a></li>
+                        <li><a href="#about">О парке</a></li>
+                        <li><a href="#events">События</a></li>
+                        <!-- <li><a href="#">Галерея</a></li> -->
+                        <li><a href="#address">Контакты</a></li>
                     </ul>
 
                 </nav>
@@ -71,7 +76,7 @@
             <span><br><br>
                 Парк культуры и отдыха Промышленного районы Самары<br> Место отдыха для всей семьи
             </span><br><br>
-            <button>Как проехать</button>
+            <button><a href="#address" style="color:rgb(186 183 193);">Как проехать</a></button>
         </div>
 
     </section>
@@ -168,7 +173,8 @@
                             Подробнее
                         </a>
                     </div>
-                </div> <div class="card">
+                </div>
+                <div class="card">
                     <div class="image">
                         <img src="./assets//img/cotton-candy.jpg">
                     </div>
@@ -285,7 +291,39 @@
         </div>
     </section>
     <section></section>
-    <section></section>
+    <section id="address">
+        <div class="text">
+            <span class="middlefont">
+                <b>Ждем вас!</b><br>
+            </span><br>
+            <span>г. Самара
+                ул. Советской Армии, 18</span><br><br>
+            <span>
+                <b>Администрация по аттракционам:</b> <br>
+                Тел. 8-927263-33-69
+            </span><br><br>
+            <span>
+                <b>Режим работы аттракционов</b> <br>
+                <b>Летнее время</b><br>
+                Будни: с 10:00 до 22:00<br>
+                Выходные: с 10:00 до 23:00
+
+            </span><br><br>
+            <span>
+                <b>В осенний и весенний периоды</b><br>
+                По выходным и праздничным
+
+            </span><br><br>
+            <span>
+                <b>В зимний период</b><br>
+                Парк закрыт
+
+            </span>
+        </div>
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab883077b2ef904a909b0ca817f0a9b5a636a8fcc24a5142e3d6fc66003821ef0&amp;source=constructor"
+            width="500" height="400" frameborder="0"></iframe>
+    </section>
 
 </body>
 
